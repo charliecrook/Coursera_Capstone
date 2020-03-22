@@ -9,17 +9,17 @@ The report aims to answer the question: “Can a London resident find new boroug
 ## Data Description
 
 This report will use data from the following sources:
-* Government house price data [1]
-⋅⋅⋅This dataset contains the average house price by borough for the year to December 2019. This dataset uses the UK House Price Index (UK HPI) which is calculated by the Office for National Statistics and Land & Property Services Northern Ireland. Data for the UK HPI is provided by HM Land Registry. The dataset is provided in csv format and will be loaded using Pandas.
+* Government house price data [1]  
+This dataset contains the average house price by borough for the year to December 2019. This dataset uses the UK House Price Index (UK HPI) which is calculated by the Office for National Statistics and Land & Property Services Northern Ireland. Data for the UK HPI is provided by HM Land Registry. The dataset is provided in csv format and will be loaded using Pandas.
 
-* Foursquare venue information [2]
-⋅⋅⋅Foursquare users provide information on venues throughout London. This data is hosted by Foursquare and is retrievable through use of the Foursquare API. The required data for this project is the number of venues of a given type in a defined area within each borough.
+* Foursquare venue information [2]  
+Foursquare users provide information on venues throughout London. This data is hosted by Foursquare and is retrievable through use of the Foursquare API. The required data for this project is the number of venues of a given type in a defined area within each borough.
 
-* Wikipedia co-ordinate data [3]
-⋅⋅⋅This Wikipedia page contains a list of co-ordinates for each London borough. This website will be scraped using the Beautifulsoup package and the latitude and longitude values will be loaded into a Pandas dataframe.
+* Wikipedia co-ordinate data [3]  
+This Wikipedia page contains a list of co-ordinates for each London borough. This website will be scraped using the Beautifulsoup package and the latitude and longitude values will be loaded into a Pandas dataframe.
 
-* Geojson file specifying London borough borders [4]
-⋅⋅⋅In order to create a chloropleth map, a geojson file with boundary data of each London borough will be needed. A suitable geojson file is available at the referenced Github page.
+* Geojson file specifying London borough borders [4]  
+In order to create a chloropleth map, a geojson file with boundary data of each London borough will be needed. A suitable geojson file is available at the referenced Github page.
 
 ## Application of Data
 
