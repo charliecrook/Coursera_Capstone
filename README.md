@@ -9,17 +9,17 @@ The report aims to answer the question: “Can a London resident find new boroug
 ## Data Description
 
 This report will use data from the following sources:
-* Government house price data 
-⋅⋅⋅This dataset (found at https://www.gov.uk/government/publications/uk-house-price-index-england-december-2019/uk-house-price-index-england-december-2019) contains the average house price by borough for the year to December 2019. This dataset uses the UK House Price Index (UK HPI) which is calculated by the Office for National Statistics and Land & Property Services Northern Ireland. Data for the UK HPI is provided by HM Land Registry. The dataset is provided in csv format and will be loaded using Pandas.
+* Government house price data [1]
+⋅⋅⋅This dataset contains the average house price by borough for the year to December 2019. This dataset uses the UK House Price Index (UK HPI) which is calculated by the Office for National Statistics and Land & Property Services Northern Ireland. Data for the UK HPI is provided by HM Land Registry. The dataset is provided in csv format and will be loaded using Pandas.
 
-* Foursquare venue information
+* Foursquare venue information [2]
 ⋅⋅⋅Foursquare users provide information on venues throughout London. This data is hosted by Foursquare and is retrievable through use of the Foursquare API. The required data for this project is the number of venues of a given type in a defined area within each borough.
 
-* Wikipedia co-ordinate data
-⋅⋅⋅The following Wikipedia page contains a list of co-ordinates for each London borough: https://en.wikipedia.org/wiki/List_of_London_boroughs. This website will be scraped using the Beautifulsoup package and the latitude and longitude values will be loaded into a Pandas dataframe.
+* Wikipedia co-ordinate data [3]
+⋅⋅⋅This Wikipedia page contains a list of co-ordinates for each London borough. This website will be scraped using the Beautifulsoup package and the latitude and longitude values will be loaded into a Pandas dataframe.
 
-* Geojson file specifying London borough borders
-⋅⋅⋅In order to create a chloropleth map, a geojson file with boundary data of each London borough will be needed. A suitable geojson file is available at the following Github page: https://github.com/blackmad/neighborhoods/blob/master/london.geojson.
+* Geojson file specifying London borough borders [4]
+⋅⋅⋅In order to create a chloropleth map, a geojson file with boundary data of each London borough will be needed. A suitable geojson file is available at the referenced Github page.
 
 ## Application of Data
 
@@ -31,3 +31,9 @@ The geojson file will provide the borough boundaries for the chloropleth map. Th
 
 The resulting chloropleth map will serve as a tool for potential homeowner to compare how boroughs with similar common venues compare in terms of average house price. The visualisation may also provide some insight as to the relationship between each cluster and average house price.
 
+## References
+
+* [1] [London house price data](https://www.gov.uk/government/publications/uk-house-price-index-england-december-2019/uk-house-price-index-england-december-2019)
+* [2] [Foursquare API](https://developer.foursquare.com/)
+* [3] [Wikipedia co-ordinate data](https://en.wikipedia.org/wiki/List_of_London_boroughs)
+* [4] [Geojson file specifying London borough borders](https://github.com/blackmad/neighborhoods/blob/master/london.geojson)
